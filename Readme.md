@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Gulmira Abdullayeva](https://up.htmlacademy.ru/htmlcss/30/user/1685769).
-* Наставник: `Неизвестно`.
+- Студент: [Gulmira Abdullayeva](https://up.htmlacademy.ru/htmlcss/30/user/1685769).
+- Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
