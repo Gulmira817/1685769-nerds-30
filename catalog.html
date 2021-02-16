@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <nav class="main-header-nav">
         <a class="main-header-logo">
@@ -29,14 +29,14 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <div class="basket-container">
+        <div class="cart-container">
           <img
             src="img/icon/cart-icon.svg"
             width="15"
             height="11"
             alt="Корзина"
           />
-          <a href="#" class="link-basket">Корзина</a>
+          <a href="#" class="link-cart">Корзина</a>
         </div>
       </nav>
     </header>
@@ -50,35 +50,23 @@
           class="form-filter"
         >
           <fieldset class="filter-range-price">
-            <input
-              class="range-price-line"
-              type="range"
-              name="range1"
-              min="0"
-              max="15000"
-            />
-            <input
-              class="range-price-line"
-              type="range"
-              name="range2"
-              min="0"
-              max="15000"
-            />
+            <div></div>
+            <div></div>
           </fieldset>
           <fieldset class="filter-price">
             <legend class="title">Стоимость:</legend>
-            <label for="range1" class="filter-label">от</label>
+            <label for="start-price" class="filter-label">от</label>
             <input
               class="filter-input-price"
-              type="text"
-              id="range1"
+              type="number"
+              id="start-price"
               placeholder="0"
             />
-            <label for="range2" class="filter-label">до</label>
+            <label for="end-price" class="filter-label">до</label>
             <input
               class="filter-input-price"
-              type="text"
-              id="range2"
+              type="number"
+              id="end-price"
               placeholder="15000"
             />
           </fieldset>
@@ -90,6 +78,7 @@
                 class="grid-radio"
                 type="radio"
                 name="typeGrid"
+                value="adaptive"
                 checked
               />Адаптивная</label
             >
@@ -98,6 +87,7 @@
                 class="filter-grid-radio"
                 type="radio"
                 name="typeGrid"
+                value="fix"
               />Фиксированная</label
             >
             <label class="filter-label"
@@ -105,6 +95,7 @@
                 class="filter-grid-radio"
                 type="radio"
                 name="typeGrid"
+                value="rubber"
               />Резиновая</label
             >
           </fieldset>
@@ -116,8 +107,8 @@
                 class="filter-feature-checkbox"
                 type="checkbox"
                 name="sliderBox"
-                checked
                 value="slider"
+                checked
               />Слайдер</label
             >
             <label class="filter-label"
@@ -133,8 +124,8 @@
                 class="filter-feature-checkbox"
                 type="checkbox"
                 name="newsBox"
-                checked
                 value="news"
+                checked
               />Новости</label
             >
             <label class="filter-label"
@@ -176,7 +167,7 @@
                   src="img/icon/icon-down-dir.svg"
                   width="11"
                   height="10"
-                  alt=""
+                  alt="Стрелка сортировки"
                 />
               </button>
             </li>
@@ -186,7 +177,7 @@
                   src="img/icon/icon-up-dir.svg"
                   width="11"
                   height="10"
-                  alt=""
+                  alt="Стрелка сортировки"
                 />
               </button>
             </li>
@@ -198,7 +189,7 @@
             <a href="#"
               ><img
                 src="img/photo/img-sedona.png"
-                alt="Шаблон"
+                alt="Шаблон сайта Седон"
                 width="359"
                 height="578"
             /></a>
@@ -207,7 +198,7 @@
             <a href="#"
               ><img
                 src="img/photo/img-pink.png"
-                alt="Шаблон"
+                alt="Шаблон сайта Пинк"
                 width="358"
                 height="578"
             /></a>
@@ -216,7 +207,7 @@
             <a href="#"
               ><img
                 src="img/photo/img-barbershop.png"
-                alt="Шаблон"
+                alt="Шаблон сайта барбершопа «Бородинский»"
                 width="358"
                 height="578"
             /></a>
@@ -225,7 +216,7 @@
             <a href="#"
               ><img
                 src="img/photo/img-mishka.png"
-                alt="Шаблон"
+                alt="Шаблон сайта Мишка"
                 width="358"
                 height="578"
             /></a>
@@ -234,7 +225,7 @@
             <a href="#"
               ><img
                 src="img/photo/img-aplus.png"
-                alt="Шаблон"
+                alt="Шаблон сайта Аплус"
                 width="358"
                 height="578"
             /></a>
@@ -243,7 +234,7 @@
             <a href="#"
               ><img
                 src="img/photo/img-kvast.png"
-                alt="Шаблон"
+                alt="Шаблон сайта Кваст"
                 width="359"
                 height="578"
             /></a>
@@ -262,6 +253,7 @@
 
     <footer class="main-footer">
       <section class="section-map">
+        <img src="" alt="Карта офиса по адресу улица Б. Конюшенная, д. 19/8" />
         <article class="address-article">
           <h3 class="address-header">NЁRDS DESIGN STUDIO</h3>
           <p class="address-text">
@@ -274,13 +266,13 @@
       </section>
       <div class="social-container">
         <h2 class="header-hidden">Социальная сеть</h2>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://vk.com/" target="_blank" class="social-button">
+        <ul class="list-social">
+          <li class="item-social">
+            <a href="https://vk.com/" target="_blank" class="button-social">
               <img src="img/icon/vk-icon.svg" width="81" height="81" alt="VK" />
             </a>
           </li>
-          <li class="social-item">
+          <li class="item-social">
             <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -294,7 +286,7 @@
               />
             </a>
           </li>
-          <li class="social-item">
+          <li class="item-social">
             <a
               href="https://www.instagram.com/"
               target="_blank"
@@ -316,9 +308,9 @@
       </div>
 
       <section class="section-map">
-        <article class="address-article">
-          <h3 class="address-header">NЁRDS DESIGN STUDIO</h3>
-          <p class="address-text">
+        <article class="article-address">
+          <h3 class="header-address">NЁRDS DESIGN STUDIO</h3>
+          <p class="text-address">
             191186, Санкт-Петербург,<br />
             ул. Б. Конюшенная, д. 19/8
           </p>
@@ -328,13 +320,13 @@
       </section>
       <div class="social-container">
         <h2 class="header-hidden">Социальная сеть</h2>
-        <ul class="social-list">
-          <li class="social-item">
+        <ul class="list-social">
+          <li class="item-social">
             <a href="https://vk.com/" target="_blank">
               <img src="img/icon/vk-icon.svg" width="26" height="15" alt="VK" />
             </a>
           </li>
-          <li class="social-item">
+          <li class="item-social">
             <a href="https://www.facebook.com/" target="_blank">
               <img
                 src="img/icon/fb-icon.svg"
@@ -344,7 +336,7 @@
               />
             </a>
           </li>
-          <li class="social-item">
+          <li class="item-social">
             <a href="https://www.instagram.com/" target="_blank">
               <img
                 src="img/icon/insta-icon.svg"
