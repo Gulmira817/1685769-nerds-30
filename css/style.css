@@ -1,8 +1,156 @@
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto"), 
-       url("../fonts/roboto.woff2") format("woff2"),
-       url("../fonts/roboto.woff") format("woff");
-       font-weight: bold;
-       font-style: normal;
+font-family: "Roboto";
+src:local("Roboto"), url("../fonts/roboto.woff2") format("woff2"),
+     url("../fonts/roboto.woff") format("woff");
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Roboto";
+src:local("Roboto"), url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+font-weight: 700;
+font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra: #283136;
+  --basic-white: #ffffff;
+  --basic-light-gray: #eeeeee;
+  --basic-button: #fb565a;
+  --basic-button-mobile-app: #00ca74;
+  --basic-button-mobile-app-hover: #00bc6c;
+  --basic-button-mobile-app-click: #00aa62;
+  --basic-button-presentation: #efc849;
+  --basic-button-presentation-hover: #efc849;
+  --basic-button-presentation-click: #e5a722;
+  --basic-active-template: #4d4d4d;
+  --basic-button-hover: #e74246;
+  --basic-button-click: #d7373b;
+  --basic-nav-link-hover: #fb565a;
+}
+
+.page-body {
+  min-width: 1440px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-extra);
+  background-color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li > a {
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.link-cart,
+.list-navigation a {
+  color: var(--basic-black);
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.address-text,
+.desc-percent {
+  line-height: 18px;
+}
+
+.percent {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.percent-symbol {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.filter-label {
+  line-height: 20px;
+}
+
+.list-sort-filter {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-title,
+.slide-slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.services-header {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.pagination-number,
+.address-text,
+.feedback-label,
+.button {
+  line-height: 18px;
+}
+
+.footer-slogan {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.filter-label,
+.footer-text {
+  line-height: 22px;
+}
+
+.pagination {
+  line-height: 18px;
+}
+
+.orders-text,
+.benefits-text {
+  font-weight: 700;
+}
+
+.feedback-legend {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+}
+
+.feedback-label {
+  line-height: 18px;
+  font-weight: 700;
 }
