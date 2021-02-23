@@ -1,17 +1,17 @@
 @font-face {
-font-family: "Roboto";
-src:local("Roboto"), url("../fonts/roboto.woff2") format("woff2"),
-     url("../fonts/roboto.woff") format("woff");
-font-weight: 400;
-font-style: normal;
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-font-family: "Roboto";
-src:local("Roboto"), url("../fonts/robotobold.woff2") format("woff2"),
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/robotobold.woff2") format("woff2"),
     url("../fonts/robotobold.woff") format("woff");
-font-weight: 700;
-font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Variables */
@@ -32,6 +32,12 @@ font-style: normal;
   --basic-button-hover: #e74246;
   --basic-button-click: #d7373b;
   --basic-nav-link-hover: #fb565a;
+  --social-shape:#E1E1E1;
+  
+}
+
+.page {
+  height: 100%;
 }
 
 .page-body {
@@ -44,6 +50,9 @@ font-style: normal;
   font-weight: 400;
   color: var(--basic-extra);
   background-color: var(--basic-white);
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -64,12 +73,12 @@ li > a {
   color: var(--basic-black);
 }
 
-.link-cart,
+/* .link-cart,
 .list-navigation a {
   color: var(--basic-black);
   line-height: 30px;
   font-weight: 500;
-}
+} */
 
 .address-text,
 .desc-percent {
@@ -80,6 +89,7 @@ li > a {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
+  margin: 0;
 }
 
 .percent-symbol {
@@ -115,6 +125,8 @@ li > a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 16px;
 }
 
 .pagination-number,
@@ -122,6 +134,9 @@ li > a {
 .feedback-label,
 .button {
   line-height: 18px;
+  color: var(--basic-white);
+  text-align: center;
+  font-weight: 500;
 }
 
 .footer-slogan {
@@ -129,7 +144,10 @@ li > a {
   line-height: 36px;
   font-weight: 700;
 }
-
+.but-services {
+  margin-top: 49px;
+  margin-bottom: 80px;
+}
 .filter-label,
 .footer-text {
   line-height: 22px;
@@ -153,4 +171,150 @@ li > a {
 .feedback-label {
   line-height: 18px;
   font-weight: 700;
+}
+
+.main-header {
+  background-color: var(--basic-light-gray);
+}
+
+.main-header-nav {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  width: 1160px;
+  margin: 0 auto;
+  color: var(--basic-black);
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.slide-photo {
+  background-position: center 0 0;
+  /* outline: 5px solid #d7373b; */
+}
+
+.main-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.services-article {
+  /* outline: 5px solid #d7373b; */
+}
+.services-section {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 100px;
+  outline: 5px solid black;
+  margin-bottom: 80px;
+  height: 347px;
+}
+.slideshow-container {
+  margin-bottom: 80px;
+  width: 1160px;
+  margin: 0 auto;
+  outline: 5px solid black;
+}
+
+.slideshow {
+  background-color: var(--basic-light-gray);
+  margin-bottom: 80px;
+}
+.sub-footer {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.benefits-section {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  /* outline: 5px solid #377cd7; */
+  padding: 0;
+  margin: 0;
+}
+
+.item-social {
+  width: 81px;
+  height: 81px;
+
+  background:var(--social-shape);
+  border-radius: 50%;
+}
+.item-social img {
+  margin: 30px 30px;
+}
+.list-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 31px;
+  padding: 0;
+}
+
+.border {
+  border-bottom: 2px solid var(--basic-light-gray);
+  /* margin-bottom: 39px; */
+  /* margin-top: 80px; */
+}
+
+.text-header {
+  outline: 5px solid green;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 32px;
+  margin-top: 0px;
+}
+
+.text {
+  margin-bottom: 40px;
+}
+.orders-text {
+  margin-top: 40px;
+  margin-bottom: 23px;
+}
+
+.benefits-column-one {
+  margin-right: 149px;
+  margin-top: 73px;
+  /* outline: 5px solid blue; */
+}
+.benefits-column-two {
+  margin-top: 39px;
+  /* outline: 5px solid blue; */
+}
+.benefits-text {
+  margin-top: 37px;
+  margin-bottom: 31px;
+  text-align: center;
+  font-weight: 700;
+}
+.benefits-img {
+  /* outline: 5px solid blue; */
+}
+.list-partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.partners-section {
+  margin-top: 46px;
+  margin-top: 44px;
+}
+
+.but-services {
+  background: var(--basic-button);
+  width: 160px;
+  height: 50px;
+  padding: 17px 40px 15px 39px;
+}
+
+.services-slogan {
+  margin-bottom: 48px;
+}
+.footer-div{
+  justify-self:center;
 }
