@@ -202,9 +202,9 @@ li > a {
   margin: 0 auto;
 }
 
-.services-article {
-  /* outline: 5px solid #d7373b; */
-}
+/* .services-article {
+  outline: 5px solid #d7373b;
+} */
 .services-section {
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -292,9 +292,9 @@ li > a {
   text-align: center;
   font-weight: 700;
 }
-.benefits-img {
-  /* outline: 5px solid blue; */
-}
+/* .benefits-img {
+  outline: 5px solid blue;
+} */
 .list-partners {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
