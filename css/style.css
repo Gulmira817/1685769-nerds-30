@@ -471,6 +471,27 @@ li > a {
   left: -38px;
   top: 10px;
 }
+.list-orders {
+  list-style: none;
+}
+.item-order {
+  margin-bottom: 25px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.list-orders li::before {
+  content: "";
+  border-top: 1px solid red;
+  position: absolute;
+  width: 25px;
+  left: -38px;
+  top: 10px;
+  /* bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px; */
+}
 
 /* Catalog page */
 
@@ -939,7 +960,6 @@ ervices-article {
   background-color: var(--basic-button-click);
   opacity: 0.3;
 }
-
 .list-social {
   list-style: none;
   display: flex;
