@@ -56,7 +56,7 @@
 }
 
 .page-body {
-  min-width: 1160px;
+  min-width: 960px;
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -173,7 +173,8 @@ a {
   position:absolute;
   border-bottom-style: solid;
   border-bottom-color: var(--basic-button);
-  width: 83px;
+  width: 75px;
+  height: 1px;
   bottom:-13px;
 }
 
@@ -187,7 +188,7 @@ a {
   justify-content: center;
   align-items: flex-start;
   padding-top: 14px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .list-navigation a {
@@ -201,6 +202,7 @@ a {
   font-weight: 500;
   padding-top: 14px;
   color: var(--basic-black);
+  margin-left: 16px;
   /* outline: 5px solid rgb(90, 12, 12);
   outline-offset: -5px; */
 }
@@ -309,8 +311,8 @@ a {
 
 .slider-controls {
   position: absolute;
-  top: 320px;
-  right: 47%;
+  top: 315px;
+  right: 48%;
   display: flex;
   min-width: 90px;
   justify-content: space-between;
@@ -627,6 +629,10 @@ a {
   margin-bottom: 12px;
 }
 
+.catalog-modal a:not(:last-child) {
+  color:var(--basic-black);
+}
+
 .range-controls .bar {
   width: 70%;
   height: 2px;
@@ -798,7 +804,7 @@ a {
 }
 
 .catalog-text {
-  width: 200px;
+  width: 255px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
