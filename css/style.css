@@ -144,6 +144,7 @@ a {
 }
 
 .item-navigation {
+  position:relative;
   line-height: 30px;
   font-weight: 500;
 }
@@ -167,15 +168,15 @@ a {
   color: var(--basic-button-focus);
 }
 
-/* .list-navigation a:active {
-  text-decoration: underline;
-
-} */
-.active {
-  padding-bottom: 13px;
+.active:after{
+  content:"";
+  position:absolute;
   border-bottom-style: solid;
   border-bottom-color: var(--basic-button);
+  width: 83px;
+  bottom:-13px;
 }
+
 .list-navigation {
   list-style: none;
   color: var(--basic-extra);
@@ -187,7 +188,6 @@ a {
   align-items: flex-start;
   padding-top: 14px;
   flex-wrap: wrap;
-  /* min-width:437px; */
 }
 
 .list-navigation a {
