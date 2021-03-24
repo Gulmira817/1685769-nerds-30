@@ -143,9 +143,12 @@ a {
   cursor: pointer;
 }
 
-.item-navigation:not(:last-child) {
+.item-navigation {
   line-height: 30px;
   font-weight: 500;
+}
+
+.item-navigation:not(:last-child) {
   margin-right: 45px;
 }
 
@@ -164,6 +167,15 @@ a {
   color: var(--basic-button-focus);
 }
 
+/* .list-navigation a:active {
+  text-decoration: underline;
+
+} */
+.active {
+  padding-bottom: 13px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--basic-button);
+}
 .list-navigation {
   list-style: none;
   color: var(--basic-extra);
@@ -409,10 +421,12 @@ a {
 
 .item-partner a:focus {
   opacity: 0.1;
+  cursor: pointer;
 }
 
 .item-partner a:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .item-partner:not(:last-child):after {
